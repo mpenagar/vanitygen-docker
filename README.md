@@ -1,5 +1,3 @@
-# vanitygen-docker
-
 [![Docker Stars](https://img.shields.io/docker/stars/mpenagar/vanitygen.svg?style=flat-square)](https://hub.docker.com/r/mpenagar/vanitygen/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/mpenagar/vanitygen.svg?style=flat-square)](https://hub.docker.com/r/mpenagar/vanitygen/)
 

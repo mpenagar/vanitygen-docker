@@ -22,7 +22,7 @@ Command Help
 -------------
 
 ```bash
-$ docker run --rm mpenagar/vanitygen --help
+$ docker run --rm mpenagar/vanitygen
 ```
 
 Don't trust
@@ -35,4 +35,17 @@ $ git clone https://github.com/mpenagar/vanitygen-docker
 $ cd vanitygen-docker
 $ docker build -t vanitygen .
 $ docker run --rm vanitygen -t 4 1abc
+```
+
+Add some entropy
+----------------
+
+You can seed the random number generator from a file `-s <file>`. A simple method is typing some random chars:
+
+```bash
+$ docker run --rm -i  mpenagar/vanitygen -t 4 -s /dev/stdin 1abc << END
+> write here
+> some random chars
+> and end with
+> END
 ```

@@ -1,6 +1,6 @@
-FROM alpine
+FROM alpine:3.7
 
-RUN apk add --no-cache gcc git make libc-dev openssl-dev=1.0.2t-r0 pcre-dev && \
+RUN apk add --no-cache gcc git make libc-dev openssl-dev pcre-dev && \
     git clone https://github.com/samr7/vanitygen && \
     cd vanitygen && \
     make
